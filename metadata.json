@@ -1,0 +1,6 @@
+{
+  "name": "LineB CAB — ระบบคำนวณและคาดการณ์กำลังคนมาตรฐาน (Standard MP Model)",
+  "description": "ระบบวิเคราะห์ประสิทธิภาพการผลิตและคำนวณอัตรากำลังคนมาตรฐาน (STD MP) จากปริมาณการผลิต (Volume) และเวลามาตรฐาน (Standard Time) รายรุ่น สำหรับสายการผลิต LineB - CAB",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

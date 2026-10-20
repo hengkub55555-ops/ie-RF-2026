@@ -1,0 +1,294 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'IBM Plex Sans Thai', -apple-system, BlinkMacSystemFont, sans-serif;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* ==========================================================================
+   DARK THEME (โหมดมืด / 深色模式 / Dark Mode)
+   ========================================================================== */
+html.theme-dark body,
+html.theme-dark .bg-slate-50 {
+  background-color: #0b0f19 !important;
+  color: #f1f5f9 !important;
+}
+
+html.theme-dark .bg-white {
+  background-color: #111827 !important;
+  color: #f1f5f9 !important;
+}
+
+html.theme-dark .bg-slate-50\/50,
+html.theme-dark .bg-slate-50\/60,
+html.theme-dark .bg-slate-50\/70,
+html.theme-dark .bg-slate-50\/80,
+html.theme-dark .bg-slate-100,
+html.theme-dark .bg-slate-100\/50,
+html.theme-dark .bg-slate-200\/70 {
+  background-color: #1e293b !important;
+  color: #e2e8f0 !important;
+}
+
+html.theme-dark .border-slate-100,
+html.theme-dark .border-slate-200,
+html.theme-dark .border-slate-200\/70,
+html.theme-dark .border-slate-300 {
+  border-color: #334155 !important;
+}
+
+html.theme-dark .divide-slate-100 > :not([hidden]) ~ :not([hidden]),
+html.theme-dark .divide-slate-200 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #1e293b !important;
+}
+
+html.theme-dark .text-slate-900,
+html.theme-dark .text-slate-800 {
+  color: #f8fafc !important;
+}
+
+html.theme-dark .text-slate-700,
+html.theme-dark .text-slate-600 {
+  color: #cbd5e1 !important;
+}
+
+html.theme-dark .text-slate-500,
+html.theme-dark .text-slate-400 {
+  color: #94a3b8 !important;
+}
+
+/* Tinted surface overrides in Dark Theme */
+html.theme-dark .bg-blue-50,
+html.theme-dark .bg-blue-50\/40,
+html.theme-dark .bg-blue-50\/50,
+html.theme-dark .bg-blue-50\/60,
+html.theme-dark .bg-blue-50\/70,
+html.theme-dark .bg-blue-50\/80,
+html.theme-dark .bg-blue-50\/90,
+html.theme-dark .bg-blue-100\/50 {
+  background-color: rgba(30, 58, 138, 0.28) !important;
+  border-color: rgba(59, 130, 246, 0.45) !important;
+}
+
+html.theme-dark .text-blue-950,
+html.theme-dark .text-blue-900,
+html.theme-dark .text-blue-800,
+html.theme-dark .text-blue-700 {
+  color: #93c5fd !important;
+}
+
+html.theme-dark .bg-indigo-50\/80 {
+  background-color: rgba(49, 46, 129, 0.32) !important;
+  border-color: rgba(99, 102, 241, 0.5) !important;
+}
+
+html.theme-dark .text-indigo-950,
+html.theme-dark .text-indigo-700 {
+  color: #a5b4fc !important;
+}
+
+html.theme-dark .bg-emerald-50,
+html.theme-dark .bg-emerald-50\/50,
+html.theme-dark .bg-emerald-50\/70,
+html.theme-dark .bg-emerald-50\/80,
+html.theme-dark .bg-emerald-100 {
+  background-color: rgba(6, 78, 59, 0.32) !important;
+  border-color: rgba(16, 185, 129, 0.45) !important;
+}
+
+html.theme-dark .text-emerald-950,
+html.theme-dark .text-emerald-900,
+html.theme-dark .text-emerald-800,
+html.theme-dark .text-emerald-700 {
+  color: #6ee7b7 !important;
+}
+
+html.theme-dark .bg-teal-50\/80 {
+  background-color: rgba(19, 78, 74, 0.32) !important;
+  border-color: rgba(20, 184, 166, 0.45) !important;
+}
+
+html.theme-dark .text-teal-950,
+html.theme-dark .text-teal-700 {
+  color: #5eead4 !important;
+}
+
+html.theme-dark .bg-amber-50,
+html.theme-dark .bg-amber-50\/50,
+html.theme-dark .bg-amber-50\/60,
+html.theme-dark .bg-amber-50\/70,
+html.theme-dark .bg-amber-50\/90,
+html.theme-dark .bg-amber-100,
+html.theme-dark .bg-amber-100\/80 {
+  background-color: rgba(120, 53, 15, 0.32) !important;
+  border-color: rgba(245, 158, 11, 0.45) !important;
+}
+
+html.theme-dark .text-amber-950,
+html.theme-dark .text-amber-900,
+html.theme-dark .text-amber-800,
+html.theme-dark .text-amber-700 {
+  color: #fcd34d !important;
+}
+
+html.theme-dark .bg-rose-50 {
+  background-color: rgba(136, 19, 55, 0.3) !important;
+  border-color: rgba(244, 63, 94, 0.45) !important;
+}
+
+html.theme-dark .text-rose-700 {
+  color: #fda4af !important;
+}
+
+html.theme-dark input[type="number"],
+html.theme-dark input[type="text"],
+html.theme-dark select {
+  background-color: #0f172a !important;
+  color: #f8fafc !important;
+  border-color: #334155 !important;
+}
+
+html.theme-dark svg text {
+  fill: #cbd5e1 !important;
+}
+
+html.theme-dark svg line {
+  stroke: #1e293b !important;
+}
+
+html.theme-dark svg rect[fill="#eff6ff"] {
+  fill: rgba(30, 58, 138, 0.25) !important;
+  stroke: rgba(59, 130, 246, 0.4) !important;
+}
+
+/* ==========================================================================
+   INDUSTRIAL NAVY THEME (โหมดโรงงานวิศวกรรม / 工业深蓝 / Industrial Mode)
+   ========================================================================== */
+html.theme-industrial body,
+html.theme-industrial .bg-slate-50 {
+  background-color: #0f172a !important;
+  color: #e2e8f0 !important;
+}
+
+html.theme-industrial .bg-white {
+  background-color: #1e293b !important;
+  color: #f8fafc !important;
+}
+
+html.theme-industrial .bg-slate-50\/50,
+html.theme-industrial .bg-slate-50\/60,
+html.theme-industrial .bg-slate-50\/70,
+html.theme-industrial .bg-slate-50\/80,
+html.theme-industrial .bg-slate-100,
+html.theme-industrial .bg-slate-100\/50,
+html.theme-industrial .bg-slate-200\/70 {
+  background-color: #0f172a !important;
+  color: #cbd5e1 !important;
+}
+
+html.theme-industrial .border-slate-100,
+html.theme-industrial .border-slate-200,
+html.theme-industrial .border-slate-200\/70,
+html.theme-industrial .border-slate-300 {
+  border-color: #38bdf840 !important;
+}
+
+html.theme-industrial .divide-slate-100 > :not([hidden]) ~ :not([hidden]),
+html.theme-industrial .divide-slate-200 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #334155 !important;
+}
+
+html.theme-industrial .text-slate-900,
+html.theme-industrial .text-slate-800 {
+  color: #f0f9ff !important;
+}
+
+html.theme-industrial .text-slate-700,
+html.theme-industrial .text-slate-600 {
+  color: #bae6fd !important;
+}
+
+html.theme-industrial .text-slate-500,
+html.theme-industrial .text-slate-400 {
+  color: #7dd3fc !important;
+}
+
+html.theme-industrial .bg-blue-50,
+html.theme-industrial .bg-blue-50\/40,
+html.theme-industrial .bg-blue-50\/50,
+html.theme-industrial .bg-blue-50\/60,
+html.theme-industrial .bg-blue-50\/70,
+html.theme-industrial .bg-blue-50\/80,
+html.theme-industrial .bg-blue-50\/90,
+html.theme-industrial .bg-blue-100\/50 {
+  background-color: rgba(2, 132, 199, 0.25) !important;
+  border-color: rgba(56, 189, 248, 0.5) !important;
+}
+
+html.theme-industrial .text-blue-950,
+html.theme-industrial .text-blue-900,
+html.theme-industrial .text-blue-800,
+html.theme-industrial .text-blue-700 {
+  color: #7dd3fc !important;
+}
+
+html.theme-industrial .bg-emerald-50,
+html.theme-industrial .bg-emerald-50\/50,
+html.theme-industrial .bg-emerald-50\/70,
+html.theme-industrial .bg-emerald-50\/80,
+html.theme-industrial .bg-emerald-100 {
+  background-color: rgba(5, 150, 105, 0.25) !important;
+  border-color: rgba(52, 211, 153, 0.5) !important;
+}
+
+html.theme-industrial .text-emerald-950,
+html.theme-industrial .text-emerald-900,
+html.theme-industrial .text-emerald-800,
+html.theme-industrial .text-emerald-700 {
+  color: #6ee7b7 !important;
+}
+
+html.theme-industrial .bg-amber-50,
+html.theme-industrial .bg-amber-50\/50,
+html.theme-industrial .bg-amber-50\/60,
+html.theme-industrial .bg-amber-50\/70,
+html.theme-industrial .bg-amber-50\/90,
+html.theme-industrial .bg-amber-100,
+html.theme-industrial .bg-amber-100\/80 {
+  background-color: rgba(217, 119, 6, 0.25) !important;
+  border-color: rgba(251, 191, 36, 0.5) !important;
+}
+
+html.theme-industrial .text-amber-950,
+html.theme-industrial .text-amber-900,
+html.theme-industrial .text-amber-800,
+html.theme-industrial .text-amber-700 {
+  color: #fde68a !important;
+}
+
+html.theme-industrial input[type="number"],
+html.theme-industrial input[type="text"],
+html.theme-industrial select {
+  background-color: #090d16 !important;
+  color: #f0f9ff !important;
+  border-color: #0284c7 !important;
+}
+
+html.theme-industrial svg text {
+  fill: #bae6fd !important;
+}
+
+html.theme-industrial svg line {
+  stroke: #334155 !important;
+}
